@@ -15,13 +15,12 @@ export default function About() {
             className="relative"
           >
             <div className="w-full aspect-[3/4] bg-gradient-to-br from-[#d6eeee] via-[#a8d4d4] to-[#4a9e9e] rounded-[2px_60px_2px_60px] relative overflow-hidden shadow-lg">
-              {/* Placeholder Pattern */}
-              <div className="absolute inset-0 opacity-20" 
-                   style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='400' height='500' viewBox='0 0 400 500' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='200' cy='320' rx='120' ry='160' fill='white'/%3E%3Cellipse cx='200' cy='260' rx='70' ry='90' fill='white'/%3E%3C/svg%3E")` }}>
-              </div>
-              <div className="absolute bottom-8 left-0 right-0 text-center text-[#2d6a6a] italic opacity-70 text-sm">
-                Your photo here
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1505159940484-eb2b9f2588e2?auto=format&fit=crop&w=800&q=80" 
+                alt="Calm ocean waves representing emotional depth" 
+                className="w-full h-full object-cover mix-blend-overlay opacity-80"
+                referrerPolicy="no-referrer"
+              />
             </div>
             
             <div className="absolute -bottom-6 -right-6 bg-[#2d6a6a] text-white w-28 h-28 rounded-full flex flex-col items-center justify-center text-center shadow-xl z-10">
@@ -39,7 +38,7 @@ export default function About() {
           >
             <div className="flex items-center gap-2 text-xs tracking-[0.14em] uppercase text-[#4a9e9e] font-medium mb-4">
               <span className="w-6 h-px bg-[#4a9e9e]"></span>
-              About the Therapist
+              About the Practice
             </div>
             
             <h2 className="section-title mb-6">
@@ -48,13 +47,13 @@ export default function About() {
             
             <div className="space-y-5 text-[#5a6a6a] font-light leading-relaxed text-lg">
               <p>
-                Hi, I'm [Your Name], a registered psychologist based on the Sunshine Coast. I specialise in Intensive Short-Term Dynamic Psychotherapy (ISTDP), an approach I chose because of its power to create genuine, lasting change — not just symptom management.
+                At In Session Clinical Psychology, based on the Sunshine Coast, we specialise in Intensive Short-Term Dynamic Psychotherapy (ISTDP). We chose this approach because of its power to create genuine, lasting change — not just symptom management.
               </p>
               <p>
-                I know how exhausting it can be to feel stuck — to have tried therapy before without finding the relief you were hoping for. ISTDP is different. It's active, collaborative, and often brings meaningful results far more quickly than traditional approaches.
+                We know how exhausting it can be to feel stuck — to have tried therapy before without finding the relief you were hoping for. ISTDP is different. It's active, collaborative, and often brings meaningful results far more quickly than traditional approaches.
               </p>
               <p>
-                My practice is a safe, non-judgmental space where we'll work together with curiosity and compassion — gently uncovering what's beneath the surface so you can finally move forward.
+                Our practice is a safe, non-judgmental space where we'll work together with curiosity and compassion — gently uncovering what's beneath the surface so you can finally move forward.
               </p>
             </div>
 

@@ -101,7 +101,7 @@ export default function Contact() {
               
               <div>
                 <label className="block text-xs uppercase tracking-wider text-[#4a9e9e] font-medium mb-2">What brings you here?</label>
-                <select name="reason" className="w-full px-4 py-3 border border-[#a8d4d4] rounded-lg bg-[#f9f6f1] text-sm font-light focus:outline-none focus:border-[#4a9e9e] focus:ring-2 focus:ring-[#4a9e9e]/10 transition-all">
+                <select name="reason" required className="w-full px-4 py-3 border border-[#a8d4d4] rounded-lg bg-[#f9f6f1] text-sm font-light focus:outline-none focus:border-[#4a9e9e] focus:ring-2 focus:ring-[#4a9e9e]/10 transition-all">
                   <option value="">Select a reason</option>
                   <option>Anxiety or panic</option>
                   <option>Depression or low mood</option>
