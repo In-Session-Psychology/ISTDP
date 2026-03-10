@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+:root {
+  --deep: #1a3a3a;
+  --ocean: #2d6a6a;
+  --teal: #4a9e9e;
+  --mist: #a8d4d4;
+  --foam: #d6eeee;
+  --sand: #f5f0e8;
+  --warm: #f9f6f1;
+  --text: #2a2a2a;
+  --text-light: #5a6a6a;
+  --accent: #c17d5a;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text);
+  background: var(--warm);
+  overflow-x: hidden;
+}
+
+/* Typography Utilities */
+.font-serif { font-family: var(--font-serif); }
+.font-sans { font-family: var(--font-sans); }
+
+/* Custom Component Styles */
+.nav-logo {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--deep);
+  letter-spacing: 0.02em;
+}
+
+.nav-logo span {
+  color: var(--teal);
+  font-style: italic;
+}
+
+.hero-h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 5vw, 5.5rem);
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--deep);
+}
+
+.hero-h1 em {
+  font-style: italic;
+  color: var(--teal);
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 3.5vw, 3.5rem);
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--deep);
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--teal);
+}
+
+/* Animations */
+@keyframes slowRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-slow-rotate {
+  animation: slowRotate 30s linear infinite;
+}
