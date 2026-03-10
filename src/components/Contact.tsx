@@ -82,25 +82,26 @@ export default function Contact() {
           >
             <h3 className="font-serif text-2xl text-[#1a3a3a] mb-6">Send an Enquiry</h3>
             
-            <form className="space-y-5">
+            <form action="https://api.web3forms.com/submit" method="POST" className="space-y-5">
+              <input type="hidden" name="access_key" value="89bb5cbb-9b86-4172-a79b-a82428a200ad" />
               <div>
                 <label className="block text-xs uppercase tracking-wider text-[#4a9e9e] font-medium mb-2">Your Name</label>
-                <input type="text" placeholder="First and last name" className="w-full px-4 py-3 border border-[#a8d4d4] rounded-lg bg-[#f9f6f1] text-sm font-light focus:outline-none focus:border-[#4a9e9e] focus:ring-2 focus:ring-[#4a9e9e]/10 transition-all" />
+                <input type="text" name="name" required placeholder="First and last name" className="w-full px-4 py-3 border border-[#a8d4d4] rounded-lg bg-[#f9f6f1] text-sm font-light focus:outline-none focus:border-[#4a9e9e] focus:ring-2 focus:ring-[#4a9e9e]/10 transition-all" />
               </div>
               
               <div>
                 <label className="block text-xs uppercase tracking-wider text-[#4a9e9e] font-medium mb-2">Email Address</label>
-                <input type="email" placeholder="your@email.com" className="w-full px-4 py-3 border border-[#a8d4d4] rounded-lg bg-[#f9f6f1] text-sm font-light focus:outline-none focus:border-[#4a9e9e] focus:ring-2 focus:ring-[#4a9e9e]/10 transition-all" />
+                <input type="email" name="email" required placeholder="your@email.com" className="w-full px-4 py-3 border border-[#a8d4d4] rounded-lg bg-[#f9f6f1] text-sm font-light focus:outline-none focus:border-[#4a9e9e] focus:ring-2 focus:ring-[#4a9e9e]/10 transition-all" />
               </div>
               
               <div>
                 <label className="block text-xs uppercase tracking-wider text-[#4a9e9e] font-medium mb-2">Phone (optional)</label>
-                <input type="tel" placeholder="0400 000 000" className="w-full px-4 py-3 border border-[#a8d4d4] rounded-lg bg-[#f9f6f1] text-sm font-light focus:outline-none focus:border-[#4a9e9e] focus:ring-2 focus:ring-[#4a9e9e]/10 transition-all" />
+                <input type="tel" name="phone" placeholder="0400 000 000" className="w-full px-4 py-3 border border-[#a8d4d4] rounded-lg bg-[#f9f6f1] text-sm font-light focus:outline-none focus:border-[#4a9e9e] focus:ring-2 focus:ring-[#4a9e9e]/10 transition-all" />
               </div>
               
               <div>
                 <label className="block text-xs uppercase tracking-wider text-[#4a9e9e] font-medium mb-2">What brings you here?</label>
-                <select className="w-full px-4 py-3 border border-[#a8d4d4] rounded-lg bg-[#f9f6f1] text-sm font-light focus:outline-none focus:border-[#4a9e9e] focus:ring-2 focus:ring-[#4a9e9e]/10 transition-all">
+                <select name="reason" className="w-full px-4 py-3 border border-[#a8d4d4] rounded-lg bg-[#f9f6f1] text-sm font-light focus:outline-none focus:border-[#4a9e9e] focus:ring-2 focus:ring-[#4a9e9e]/10 transition-all">
                   <option value="">Select a reason</option>
                   <option>Anxiety or panic</option>
                   <option>Depression or low mood</option>
@@ -114,10 +115,10 @@ export default function Contact() {
               
               <div>
                 <label className="block text-xs uppercase tracking-wider text-[#4a9e9e] font-medium mb-2">Your Message</label>
-                <textarea placeholder="Tell me a little about what you're experiencing or any questions you have." className="w-full px-4 py-3 border border-[#a8d4d4] rounded-lg bg-[#f9f6f1] text-sm font-light min-h-[120px] focus:outline-none focus:border-[#4a9e9e] focus:ring-2 focus:ring-[#4a9e9e]/10 transition-all resize-y"></textarea>
+                <textarea name="message" required placeholder="Tell me a little about what you're experiencing or any questions you have." className="w-full px-4 py-3 border border-[#a8d4d4] rounded-lg bg-[#f9f6f1] text-sm font-light min-h-[120px] focus:outline-none focus:border-[#4a9e9e] focus:ring-2 focus:ring-[#4a9e9e]/10 transition-all resize-y"></textarea>
               </div>
               
-              <button type="button" className="w-full bg-[#2d6a6a] text-white py-3.5 rounded-lg text-sm font-medium tracking-wide hover:bg-[#1a3a3a] hover:-translate-y-px hover:shadow-lg transition-all duration-200">
+              <button type="submit" className="w-full bg-[#2d6a6a] text-white py-3.5 rounded-lg text-sm font-medium tracking-wide hover:bg-[#1a3a3a] hover:-translate-y-px hover:shadow-lg transition-all duration-200">
                 Send Enquiry
               </button>
               
